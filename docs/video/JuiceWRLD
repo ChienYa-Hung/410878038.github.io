@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+<body>
+
+<div id="header">
+
+<img src="photo/JuiceWRLD.jpg" alt="Juice WRLD" height="100"/>
+
+<p>Juice WRLD’s music is not entirely 
+Hip-hop. His music also <span class="elements">incorporates 
+some R&B, emo, and Rock </span> elements, and all of 
+these are related to his birth. Juice WRLD’s 
+parents divorced when he was three years old., 
+And Juice WRLD lives with her mother and brother. 
+Because her mother is a very pious Christian, when 
+Juice WRLD was a child, he strictly restricted him 
+from listening to hip-hop music. Juice WRKD also chose
+Blink-182, Fall Out. Boy, Panic! at the Disco and other
+popular rock bands’ music also shaped his special music 
+style now</p>
+
+<video src="music/Robbery.mp4"
+width="400" height="300"
+preload
+controls
+loop>
+<p>Robbery video</p>
+</video>
+
+<video src="music/All Girls Are The Same.mp4"
+width="400" height="300"
+preload
+controls
+loop>
+<p> All Girls Are The Same video</p>
+</video>
+
+</div><!-- end of header -->
+
+
+</body>
+</html>
