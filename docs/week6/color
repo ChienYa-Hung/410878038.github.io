@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<style>
+*{
+  background-color: lightblue;
+}
+
+h1{
+color:DarkCyan;
+opacity: 1;
+}
+h2 {
+color: #ee3e80;
+opacity: 0.5;
+}
+h3{
+color:#108000;
+opacity: 0.3;
+}
+p {
+color: rgb(100,100,90);
+}
+
+.extra span {
+  color: yellow;
+}
+
+div > p {
+  background-color: yellow;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Introduction to Probability</h1>
+<p>On Tuesday Morning</p>
+<h2>Discrete Mathematics</h2>
+<p>On Wednesday Morning</p>
+<h3>Engineering Mathematics</h3>
+<p>On Friday Morning</p>
+
+
+<div class="extra" style="color:green">
+  Here is <span>a span element</span> which is green, because it inherits from its parent.
+</div>
+
+<div class="extra" style="color:red">
+  Here is <span>a span element</span> which is blue, as span elements are set to be.
+</div>
+
+<div>
+  <h1>My name is Chien</h1>
+  <h2>My birthday is on Jan.29th</h2>
+  <p>I am twenty years old.</p>
+</div>
+
+</body>
+</html>
