@@ -13,36 +13,32 @@
           width: 1000px;
           text-align:left}
 		 
-          #DIV1{
-          width:500px;　//DIV區塊寬度
-          line-height:50px;　//DIV區塊高度
-          padding:20px;　//DIV區塊內距，參閱：CSS padding 內距。
-          border:2px solid;　//DIV區塊邊框，參閱：CSS border 邊框設計。
-          margin-right:10px;　//靠右外距，參閱：CSS margin 邊界使用介紹範例教學。
-          float:left;}
-		 
-          #DIV2{
-          width:500px;
-          line-height:50px;
-          padding:20px;
-          border:2px solid;
-          float:left;}
-		 
+       #le {
+       float: left; 
+       margin: 0 15px 15px 0; 
+       width: 450px; 
+       clear: both;}
+		
+       #ri {
+       float: right; 
+       margin: 0 0 15px 15px; 
+       width: 450px; 
+       clear: both;}
         </style>
 		
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
-	    
-    <div id="DIV1">
+
     <h2>大師兄銷魂麵鋪-中山店</h2>
-	
+    <div id="le">
     <img src="20191228_131426.jpg" 
 	     alt="銷魂麵" 
 	     width="450" 
 	     height="336"
 	     align="bottom">
+    </div>
     <span style="font-family: 'Noto Sans TC', sans-serif; font-weight:100; font-size:15;">
 	據官網介紹，這碗麵看似平凡，卻是使用新鮮牛大骨，</br>
 	數十種中藥材及頂級辣椒，花十小時人工精心熬煮出的麻辣湯頭，</br>
@@ -55,13 +51,13 @@
     </span>
 	
     <a href = "https://www.masterspicy.com/">大師兄銷魂麵鋪官網</a> 
-    </div>
+
 
     <p></p>
 
-    <div id="DIV1">
-    <h2>魚君 さかなくん 鮮魚專門居酒屋</h2>
 
+    <h2>魚君 さかなくん 鮮魚專門居酒屋</h2>
+    <div id="le">
     <img src="20200508_212403.jpg" 
 	     alt="魚君1" 
 	     width="450" 
@@ -69,14 +65,14 @@
 	     align="bottom">
     </div>
 
-    <div id="DIV2">
+
+    <div id="ri">
     <img src="20200508_212456.jpg" 
 	 alt="魚君2" 
          width="450" 
          height="336"
 	 align="bottom">
      </div>
-     <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
      
      <p></p>
 
