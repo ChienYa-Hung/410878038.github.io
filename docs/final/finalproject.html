@@ -1,402 +1,66 @@
 <html>
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-    <link rel="shortcut icon" href="招牌.jpg"/>
-
+<head>
     <title>坐著做海鮮丼飯 | Restaurant</title>
-
-    <link rel='stylesheet' href='css/settings.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/reset.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/wordpress.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/animation.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/magnific-popup.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/ui-custom.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/mediaelementplayer-legacy.min.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/flexslider.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/tooltipster.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/odometer-theme-minimal.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/hw-parallax.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/screen.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/kirki-styles.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/grid.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/datepicker.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/style.css' type='text/css' media='all'/>
     
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C700%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic' type='text/css' media='all'/>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato%3A100%2C200%2C300%2C400%2C600%2C700%2C800%2C900%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic' type='text/css' media='all'/>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Kristi%3A100%2C200%2C300%2C400%2C600%2C700%2C800%2C900%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic' type='text/css' media='all'/>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato%7CKristi&#038;subset' type='text/css' media='all'/>
-    <link href="http://fonts.googleapis.com/css?family=Kristi:400%7CLato:300%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
-
-  </head>
+    <style>
+      body {width: 960px;
+	          margin: 0 auto;}
+      #content {overflow: auto;
+                height: 100%;}
+      #nav, #feature, #footer {background-color: #efefef;
+	                             padding: 10px;
+	                             margin: 10px;}
+     .column1, .column2, .column3 {background-color: #efefef;
+	                                 float: left;
+	                                 width: 300px;
+	                                 margin: 10px;}
+      li {display: inline;
+	        padding: 5px;}
+    </style>
+</head>
   
-  <body class="home page-template-default page page-id-3210">
-
-    <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="classicmenu" />
-    <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="" />
-    <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="" />
-    <input type="hidden" id="pp_image_path" name="pp_image_path" value="http://themes.themegoods.com/grandrestaurant/demo2/wp-content/themes/grandrestaurant/images/" />
-    <input type="hidden" id="pp_homepage_url" name="pp_homepage_url" value="http://themes.themegoods.com/grandrestaurant/demo2" />
-    <input type="hidden" id="pp_ajax_search" name="pp_ajax_search" value="1" />
-    <input type="hidden" id="pp_fixed_menu" name="pp_fixed_menu" value="1" />
-    <input type="hidden" id="pp_topbar" name="pp_topbar" value="1" />
-    <input type="hidden" id="post_client_column" name="post_client_column" value="4" />
-    <input type="hidden" id="pp_back" name="pp_back" value="Back" />
-    <input type="hidden" id="pp_page_title_img_blur" name="pp_page_title_img_blur" value="1" />
-    <input type="hidden" id="tg_project_filterable_link" name="tg_project_filterable_link" value="" />
-    <input type="hidden" id="pp_reservation_start_time" name="pp_reservation_start_time" value="11:00" />
-    <input type="hidden" id="pp_reservation_end_time" name="pp_reservation_end_time" value="21:00" />
-    <input type="hidden" id="pp_reservation_time_step" name="pp_reservation_time_step" value="30" />
-
-    <input type="hidden" id="pp_footer_style" name="pp_footer_style" value="4" />
-
-    <!-- Begin mobile menu -->
-    <div class="mobile_menu_wrapper">
-        <a id="close_mobile_menu" href="javascript:;"><i class="fa fa-close"></i></a>
-
-        <form role="search" method="get" name="searchform" id="searchform" action="http://themes.themegoods.com/grandrestaurant/demo2/">
-            <div>
-                <input type="text" value="" name="s" id="s" autocomplete="off" placeholder="Search..." />
-                <button>
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-            <div id="autocomplete"></div>
-        </form>
-
-        <div class="menu-side-menu-container">
-            <ul id="mobile_main_menu" class="mobile_main_nav">
-                <li class="menu-item"><a href="#welcome">Welcome</a></li>
-                <li class="menu-item"><a href="#about">About Us</a></li>
-                <li class="menu-item"><a href="#menu">Menu</a></li>
-                <li class="menu-item"><a href="#gallery">Gallery</a></li>
-                <li class="menu-item"><a href="#news">News</a></li>
-                <li class="menu-item"><a href="#findus">Find Us</a></li>
-            </ul>
-        </div>
-      
-        <!-- Begin side menu sidebar -->
-        <div class="page_content_wrapper">
-            <div class="sidebar_wrapper">
-                <div class="sidebar">
-
-                    <div class="content">
-
-                        <ul class="sidebar_widget">
-                            <li id="custom_flickr-3" class="widget Custom_Flickr">
-                                <h2 class="widgettitle">Gallery On Flickr</h2>
-                                <ul class="flickr">
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="9.jpg" title="9"><img src="9.jpeg" alt="9" width="75" height="75" /></a>
-                                    </li>
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="2.jpg" title="2"><img src="2.jpg" alt="2" width="75" height="75" /></a>
-                                    </li>
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="3.jpg" title="3"><img src="3.jpg" alt="3" width="75" height="75" /></a>
-                                    </li>
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="4.jpeg" title="4"><img src="4.jpeg" alt="4" width="75" height="75" /></a>
-                                    </li>
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="5.jpeg" title="5"><img src="5.jpeg" alt="5" width="75" height="75" /></a>
-                                    </li>
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="6.jpeg" title="6"><img src="6.jpeg" alt="6" width="75" height="75" /></a>
-                                    </li>
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="7.jpeg" title="7"><img src="7.jpeg" alt="7" width="75" height="75" /></a>
-                                    </li>
-                                    <li>
-                                        <a class="img_frame" target="_blank" href="8.jpeg" title="8"><img src="8.jpeg" alt="8" width="75" height="75" /></a>
-                                    </li>
-                                </ul>
-                                <br class="clear" />
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End side menu sidebar -->
-    </div>
-    <!-- End mobile menu -->  
+<body>
+ <div id="header">
+		<h1>坐著做海鮮丼飯</h1>
+	 <div id="nav">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Products</a></li>
+				<li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+  
+	<div id="content"> 
+    <div id="feature">
+			<h1>Feature</h1>
+      <p>致力於提供新鮮、美味日式生魚海鮮丼飯專賣。</br>
+         位於桃園市中壢區 威尼斯影城二樓。</br>
+         暫不提供訂位，請現場候位。</br>
+         地址：桃園市中壢區九和一街18號2樓之5</br>
+         午：11:30~14:30</br>
+         晚：17:30~21:00
+      </p>
+		</div>
     
+    <div class="article column1">
+			<h1>海鮮丼飯</h1>
+			<p>什麼都想吃 點這個!</p>
+		</div>
+		<div class="article column2">
+			<h1>馬糞海膽</h1>
+			<p>喜歡海膽的饕客必點</p>
+		</div>
+		<div class="article column3">
+			<h1>鮭魚</h1>
+			<p>超脫常規分量的鮭魚</p>
+		</div> 
+ 	</div> 
 
-    <!-- Begin template wrapper -->
-    <div id="wrapper" class="hasbg">
-      
-
-        <div class="header_style_wrapper">
-
-            <!-- Begin top bar -->
-            <div class="above_top_bar">
-                <div class="page_content_wrapper">      
-                    <div class="extend_top_contact_info top_contact_info">
-                        <span id="top_contact_address"><i class="fa fa-map-marker"></i>320桃園市中壢區九和一街18號2號樓之五</span>
-                        <span id="top_contact_number"><a href="tel:+65.4566743"><i class="fa fa-phone"></i>+88634220605</a></span>
-                    </div>
-                </div>
-            </div>
-            <!-- End top bar -->      
-
-            <div class="top_bar  hasbg">
-
-                <div id="menu_wrapper">
-
-                    <!-- Begin logo -->
-                    <div id="logo_normal" class="logo_container">
-                        <div class="logo_align">
-                            <a id="custom_logo" class="logo_wrapper hidden" href="http://themes.themegoods.com/grandrestaurant/demo2">
-                                <img src="招牌.jpg" alt="坐著做海鮮丼飯 | Restaurant" width="101" height="34" style="width:101px;height:34px;" />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="logo_transparent" class="logo_container">
-                        <div class="logo_align">
-                            <a id="custom_logo_transparent" class="logo_wrapper default" href="http://themes.themegoods.com/grandrestaurant/demo2">
-                                <img src="招牌.jpg" alt="坐著做海鮮丼飯 | Restaurant" width="101" height="34" style="width:101px;height:34px;" />
-                            </a>
-                        </div>
-                    </div>
-                    <!-- End logo -->
-
-                   
-                    <!-- Begin main nav -->
-                    <div id="nav_wrapper">
-                        <div class="nav_wrapper_inner">
-                            <div id="menu_border_wrapper">
-                                <div class="menu-main-menu-container">
-                                    <ul id="main_menu" class="nav">
-                                        <li class="menu-item"><a href="#welcome">Welcome</a></li>
-                                        <li class="menu-item"><a href="#about">About Us</a></li>
-                                        <li class="menu-item"><a href="#menu">Menu</a></li>
-                                        <li class="menu-item"><a href="#gallery">Gallery</a></li>
-                                        <li class="menu-item"><a href="#news">News</a></li>
-                                        <li class="menu-item"><a href="#findus">Find Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End main nav -->
-
-                </div>
-            </div>          
-    </div>
+	<div id="footer">
+		<p>中壢美食 | 桃園市中壢區九和一街18號2樓之5 | 威尼斯影城地下停車場、銀河廣場停車場</p>
+	</div> 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div id="overlay_background"></div>
-    
-    <script src='js/jquery.js'></script>
-    <script src='js/jquery-migrate.min.js'></script>
-    <script src='js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
-    <script src='js/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
-    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>  
-    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script> 
-    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
-    <script src='js/plugins/jquery.blockUI.min.js'></script>
-    <script src='js/plugins/js.cookie.min.js'></script>
-    <script src='js/plugins/jquery.magnific-popup.js'></script>
-    <script src='js/plugins/jquery.easing.js'></script>
-    <script src='js/plugins/waypoints.min.js'></script>
-    <script src='js/plugins/jquery.isotope.js'></script>
-    <script src='js/plugins/jquery.masory.js'></script>
-    <script src='js/plugins/jquery.tooltipster.min.js'></script>
-    <script src='js/plugins/hw-parallax.js'></script>
-    <script src='js/plugins/jquery.stellar.min.js'></script>
-    <script src='js/plugins/jquery.resizeimagetoparent.min.js'></script>
-    <script src='js/plugins/custom_plugins.js'></script>
-    <script src='js/plugins/custom.js'></script>
-    <script src='js/plugins/core.min.js'></script>
-    <script src='js/plugins/datepicker.min.js'></script>
-    <script src='js/plugins/custom-date.js'></script>
-    <script src='js/plugins/jquery.timepicker.js'></script>
-    <script src='js/plugins/custom-time.js'></script>
-    <script src='js/plugins/jquery.flexslider-min.js'></script>
-    <script src='js/plugins/jquery.validate.js'></script>
-    <script src='js/plugins/custom_onepage.js'></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCmVhK5ZjYRjzAe-e9ZKS1mA3NBPuViwQ"></script>
-    <script src='js/plugins/jquery.simplegmaps.min.js'></script>
-    <script src='js/plugins/script-map.js'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var tgAjax = {
-            "ajaxurl": "#",
-            "ajax_nonce": "c5281db0c2"
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript'>
-        jQuery(window).load(function(){ 
-            jQuery('.slider_wrapper').flexslider({
-                  animation: "fade",
-                  animationLoop: true,
-                  itemMargin: 0,
-                  minItems: 1,
-                  maxItems: 1,
-                  slideshow: false,
-                  controlNav: false,
-                  smoothHeight: false,
-                  slideshowSpeed: 5000,
-                  move: 1
-            });
-            
-            jQuery('.slider_wrapper.portfolio .slides li').each( function() {
-                var height = jQuery(this).height();
-                var imageHeight = jQuery(this).find('img').height();
-            
-                var offset = (height - imageHeight) / 2;
-            
-                jQuery(this).find('img').css('margin-top', offset + 'px');
-            
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        function setREVStartSize(e) {
-            try {
-                var i = jQuery(window).width(),
-                    t = 9999,
-                    r = 0,
-                    n = 0,
-                    l = 0,
-                    f = 0,
-                    s = 0,
-                    h = 0;
-                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function(e, f) {
-                        f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
-                    }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
-                    var u = (e.c.width(), jQuery(window).height());
-                    if (void 0 != e.fullScreenOffsetContainer) {
-                        var c = e.fullScreenOffsetContainer.split(",");
-                        if (c) jQuery.each(c, function(e, i) {
-                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
-                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
-                    }
-                    f = u
-                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
-                e.c.closest(".rev_slider_wrapper").css({
-                    height: f
-                })
-            } catch (d) {
-                console.log("Failure at Presize of Slider:" + d)
-            }
-        };
-    </script>
-    <script>
-        var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
-        var htmlDivCss = ".tp-caption.title,.title{font-size:65px;font-weight:300;font-family:Lato;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none;text-transform:uppercase;letter-spacing:-3px}.tp-caption.title-first-word,.title-first-word{font-size:60px;line-height:50px;font-family:Kristi;color:#cfa670;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}.tp-caption.sub-title,.sub-title{font-size:20px;line-height:24px;font-weight:400;font-family:Lato;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none;text-transform:uppercase;letter-spacing:-1px}";
-        if (htmlDiv) {
-            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-        } else {
-            var htmlDiv = document.createElement("div");
-            htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
-            document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
-        }
-    </script>
-    <script type="text/javascript">
-        setREVStartSize({
-            c: jQuery('#rev_slider_2_1'),
-            gridwidth: [1425],
-            gridheight: [650],
-            sliderLayout: 'fullscreen',
-            fullScreenAutoWidth: 'off',
-            fullScreenAlignForce: 'off',
-            fullScreenOffsetContainer: '',
-            fullScreenOffset: ''
-        });
-
-        var revapi2,
-            tpj = jQuery;
-        tpj.noConflict();
-        tpj(document).ready(function() {
-            if (tpj("#rev_slider_2_1").revolution == undefined) {
-                revslider_showDoubleJqueryError("#rev_slider_2_1");
-            } else {
-                revapi2 = tpj("#rev_slider_2_1").show().revolution({
-                    sliderType: "standard",
-                    jsFileLocation: "js/plugins/revslider/public/assets/js/",
-                    sliderLayout: "fullscreen",
-                    dottedOverlay: "none",
-                    delay: 7000,
-                    navigation: {
-                        keyboardNavigation: "off",
-                        keyboard_direction: "horizontal",
-                        mouseScrollNavigation: "off",
-                        mouseScrollReverse: "default",
-                        onHoverStop: "off",
-                        touch: {
-                            touchenabled: "on",
-                            touchOnDesktop: "off",
-                            swipe_threshold: 75,
-                            swipe_min_touches: 1,
-                            swipe_direction: "horizontal",
-                            drag_block_vertical: false
-                        }
-                    },
-                    visibilityLevels: [1240, 1024, 778, 480],
-                    gridwidth: 1425,
-                    gridheight: 650,
-                    lazyType: "none",
-                    shadow: 0,
-                    spinner: "spinner3",
-                    stopLoop: "off",
-                    stopAfterLoops: -1,
-                    stopAtSlide: -1,
-                    shuffle: "off",
-                    autoHeight: "off",
-                    fullScreenAutoWidth: "off",
-                    fullScreenAlignForce: "off",
-                    fullScreenOffsetContainer: "",
-                    fullScreenOffset: "",
-                    disableProgressBar: "on",
-                    hideThumbsOnMobile: "off",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        nextSlideOnWindowFocus: "off",
-                        disableFocusListener: false,
-                    }
-                });
-            }
-
-        }); /*ready*/
-    </script>
-    <script>
-        var htmlDivCss = '  #rev_slider_2_1_wrapper .tp-loader.spinner3 div { background-color: #444444 !important; } ';
-        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
-        if (htmlDiv) {
-            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-        } else {
-            var htmlDiv = document.createElement('div');
-            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
-            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
-        }
-    </script>
-      </body>
+</body>
 </html>
