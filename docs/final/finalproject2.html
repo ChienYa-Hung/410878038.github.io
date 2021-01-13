@@ -1,1 +1,57 @@
+<html>
+<head>
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="css/960_12_col.css" />
+  <style>
+.row {
+	border-top: solid black 1px;
+	border-bot: solid black 1px;
+}
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+	background: lightgrey;
+}
+#nav, #footer {height: 100px;}
+#contents, #aside {height: 500px;}
+#nav, #contents, #aside, #footer {margin-top: 20px;}
+#contents {overflow: auto;}
+.article {
+	margin:auto;
+	width:90%;
+	height: 300px;
+	background: grey;
+	margin-top: 20px;}
+  </style>
+</head>
+  
+  <body>
+<div class="container_12 clearfix">
+	<div id="nav" class="grid_12">
+		<p>nav</p>
+	</div>
+	<div id = "contents" class="grid_9">
+		<div class="article">
+			<p>article #1</p>
+		</div>
+		<div class="article">
+			<p>article #2</p>
+		</div>
+		<div class="article">
+			<p>article #3</p>
+		</div>
+		<div class="article">
+			<p>article #4</p>
+		</div>
+	</div>
+	<div id = "aside" class="grid_3">
+		<p>aside</p>
+	</div>
+	<div id = "footer" class="grid_12">
+		<p>footer</p>
+	</div>
 
+
+
+
+</div><!-- .container_12 -->
+</body>
+</html>
